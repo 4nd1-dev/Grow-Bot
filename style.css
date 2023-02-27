@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sans-Serif', 'Roboto';
+	box-sizing: border-box;
+	user-select: none;
+	cursor: default;
+}
+
+body{
+	background: rgb(160, 20, 0);
+	height: 100vh;
+}
+
+.content{
+	height: 100vh;
+	width: 360px;
+	margin: auto;
+	position: relative;
+}
+
+.top{
+	border: 2px solid black;
+	background: linear-gradient(to right,#222, #333, #666);
+	padding: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 10px 50px #000;
+	margin: auto;
+	height: 50px;
+	width: 360px;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+.name{
+	font-family: 'roboto';
+	font-size: 25px;
+	color: #eee;
+	text-align: center;
+}
+
+.name b{
+	color: #d03;
+	font-size: 30px
+}
+
+.description{
+	width: 200px;
+	text-align: center;
+	font-size: 12px;
+	color: #ccc
+}
+
+.description a{
+	text-decoration: none;
+	color: #d03;
+	font-weight: 600;
+}
+
+.main{
+	border: 2px black solid;
+	padding: 50px 10px 60px 10px;
+	background: linear-gradient(to top right, #222, #222, #333, #666);
+	width: 100%;
+	height: 760px;
+}
+
+.date{
+	font-size: 15px;
+	color: #f00;
+	background: #0006;
+	width: 150px;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 20px;
+	margin-top: 10px;
+	position: relative;
+	left: 50%;
+	transform: translatex(-50%);
+}
+
+.sms{
+	border: 2px solid #fff;
+	width: 250px;
+	padding: 5px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.bot-sms{
+	background: #fff7;
+	border-radius: 0 10px 10px 10px;
+}
+
+.user-sms{
+	background: #1117;
+	border: 2px solid #000;
+	border-radius: 10px 0 10px 10px;
+	float: right;
+}
+
+.sms .name{
+	font-size: 14px;
+	font-family: 'roboto';
+	text-align: left;
+	color: #900
+}
+
+.user-sms .name{
+	color: #fa0;
+}
+
+.sms .name b{
+	font-size: 15px;
+	color: #900;
+}
+
+.text{
+	font-size: 16px;
+	color: #000;
+	font-weight: 600;
+}
+
+.user-sms .text{
+	color: #fff;
+}
+
+.bottom{
+	position: fixed;
+	bottom: 0;
+	border: 2px solid #000;
+	width: 360px;
+	height: 50px;
+	background: linear-gradient(to right, #000,#333,#555);
+	box-shadow: 0 -20px 50px #000;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+input{
+	height: 25px;
+	width: 210px;
+	font-family: 'roboto';
+	font-size: 16px;
+	font-weight: 600;
+	outline: none;
+	background: #2227;
+	color: #fff;
+	padding:5px;
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+button{
+	border-radius: 100%;
+	width: 35px;
+	height: 35px;
+	font-size: 30px;
+	font-weight: 600;
+	border: none;
+	margin-left: 20px;
+	cursor: pointer;
+	background: linear-gradient(to top right, #c00,#a00,#300,#100);
+	color: #fff;
+	transition: all 300ms;
+	outline: none;
+}
+
+button:hover{
+	background: linear-gradient(to top right, #f00,#d00,#600,#400);
+	color: #fff;
+}
